@@ -2166,15 +2166,6 @@
             "type": "string"
           },
           {
-            "name": "ruleSet",
-            "in": "body",
-            "description": "RuleSet properties",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/RuleSet"
-            }
-          },
-          {
             "$ref": "#/parameters/subscriptionIdParameter"
           },
           {
