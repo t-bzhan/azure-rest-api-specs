@@ -3359,8 +3359,8 @@
                 "totalLatency"
               ],
               "x-ms-enum": {
-                  "name": "LogMetric",
-                  "modelAsString": true
+                "name": "LogMetric",
+                "modelAsString": true
               }
             }
           },
@@ -3418,6 +3418,7 @@
             "name": "continents",
             "type": "array",
             "in": "query",
+            "collectionFormat": "multi",
             "required": false,
             "items": {
               "type": "string"
@@ -3447,6 +3448,7 @@
             "name": "protocols",
             "type": "array",
             "required": true,
+            "collectionFormat": "multi",
             "in": "query",
             "collectionFormat": "multi",
             "items": {
@@ -3526,6 +3528,7 @@
             "in": "query",
             "collectionFormat": "multi",
             "required": true,
+            "collectionFormat": "multi",
             "items": {
               "type": "string",
               "enum": [
@@ -3717,6 +3720,7 @@
             "in": "query",
             "collectionFormat": "multi",
             "required": true,
+            "collectionFormat": "multi",
             "items": {
               "type": "string",
               "enum": [
@@ -3948,6 +3952,7 @@
             "in": "query",
             "collectionFormat": "multi",
             "required": false,
+            "collectionFormat": "multi",
             "items": {
               "type": "string",
               "enum": [
