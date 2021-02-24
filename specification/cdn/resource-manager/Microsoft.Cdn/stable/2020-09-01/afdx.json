@@ -3448,7 +3448,6 @@
             "name": "protocols",
             "type": "array",
             "required": true,
-            "collectionFormat": "multi",
             "in": "query",
             "collectionFormat": "multi",
             "items": {
@@ -3526,7 +3525,6 @@
             "name": "metrics",
             "type": "array",
             "in": "query",
-            "collectionFormat": "multi",
             "required": true,
             "collectionFormat": "multi",
             "items": {
@@ -3718,7 +3716,6 @@
             "name": "metrics",
             "type": "array",
             "in": "query",
-            "collectionFormat": "multi",
             "required": true,
             "collectionFormat": "multi",
             "items": {
@@ -3950,7 +3947,6 @@
             "name": "ruleTypes",
             "type": "array",
             "in": "query",
-            "collectionFormat": "multi",
             "required": false,
             "collectionFormat": "multi",
             "items": {
