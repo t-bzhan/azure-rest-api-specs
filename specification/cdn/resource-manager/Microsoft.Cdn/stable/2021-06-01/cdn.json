@@ -4518,7 +4518,7 @@
           }
         },
         "countryOrRegionCodes": {
-          "description": "Two letter country or region codes defining user country/region access in a geo filter, e.g. AU, MX, US.",
+          "description": "Two letter country or region codes defining user country or region access in a geo filter, e.g. AU, MX, US.",
           "type": "array",
           "items": {
             "type": "string"
