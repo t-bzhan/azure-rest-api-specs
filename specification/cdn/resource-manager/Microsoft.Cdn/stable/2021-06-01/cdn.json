@@ -4461,6 +4461,7 @@
           "type": "string"
         },
         "privateEndpointStatus": {
+          "description": "The approval status for the connection to the Private Link",
           "$ref": "#/definitions/PrivateEndpointStatus",
           "type": "string",
           "readOnly": true
@@ -4696,6 +4697,12 @@
           "readOnly": true,
           "description": "Provisioning status of the origin.",
           "type": "string"
+        },
+        "privateEndpointStatus": {
+          "description": "The approval status for the connection to the Private Link",
+          "$ref": "#/definitions/PrivateEndpointStatus",
+          "type": "string",
+          "readOnly": true
         }
       }
     },
@@ -4768,11 +4775,6 @@
         "privateLinkApprovalMessage": {
           "description": "A custom message to be included in the approval request to connect to the Private Link.",
           "type": "string"
-        },
-        "privateEndpointStatus": {
-          "$ref": "#/definitions/PrivateEndpointStatus",
-          "type": "string",
-          "readOnly": true
         }
       }
     },
