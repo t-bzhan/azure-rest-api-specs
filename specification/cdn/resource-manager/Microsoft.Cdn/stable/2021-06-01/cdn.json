@@ -2453,6 +2453,10 @@
           "$ref": "#/definitions/TrackedResource"
         }
       ],
+      "identity": {
+        "description": "Managed service identity.",
+        "$ref": "#/definitions/ManagedServiceIdentity"
+      },        
       "properties": {
         "sku": {
           "description": "The pricing tier (defines Azure Front Door Standard or Premium or a CDN provider, feature list and rate) of the profile.",
@@ -2489,10 +2493,6 @@
             "name": "ProfileResourceState",
             "modelAsString": true
           }
-        },
-        "identity": {
-          "description": "Managed service identity.",
-          "$ref": "#/definitions/ManagedServiceIdentity"
         },
         "provisioningState": {
           "readOnly": true,
@@ -2594,6 +2594,10 @@
             "type": "string"
           }
         },
+        "identity": {
+          "description": "Managed service identity.",
+          "$ref": "#/definitions/ManagedServiceIdentity"
+        },
         "properties": {
           "x-ms-client-flatten": true,
           "$ref": "#/definitions/ProfilePropertiesUpdateParameters"
@@ -2610,11 +2614,7 @@
           "format": "int32",
           "minimum": 16,
           "exclusiveMinimum": false
-        },
-        "identity": {
-          "description": "Managed service identity.",
-          "$ref": "#/definitions/ManagedServiceIdentity"
-        }        
+        }       
     },
     "SsoUri": {
       "description": "The URI required to login to the supplemental portal from the Azure portal.",
