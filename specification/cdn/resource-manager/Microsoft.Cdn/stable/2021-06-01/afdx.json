@@ -4152,7 +4152,7 @@
             "TimedOut",
             "PendingRevalidation",
             "Approved",
-            "RefreshValidationToken",
+            "RefreshingValidationToken",
           ],
           "type": "string",
           "x-ms-enum": {
