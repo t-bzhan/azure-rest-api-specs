@@ -2606,6 +2606,7 @@
       "x-ms-azure-resource": true
     },
     "ProfilePropertiesUpdateParameters": {
+      "type": "object",
       "description": "The JSON object containing profile update parameters.",
       "properties": {
         "originResponseTimeoutSeconds": {
@@ -2614,7 +2615,8 @@
           "format": "int32",
           "minimum": 16,
           "exclusiveMinimum": false
-        }       
+        }
+      }
     },
     "SsoUri": {
       "description": "The URI required to login to the supplemental portal from the Azure portal.",
