@@ -4488,11 +4488,6 @@
     "AFDEndpointPropertiesUpdateParameters": {
       "description": "The JSON object containing endpoint update parameters.",
       "properties": {
-        "profileName": {
-          "description": "The name of the profile which holds the endpoint.",
-          "type": "string",
-          "readOnly": true
-        },
         "enabledState": {
           "description": "Whether to enable use of this rule. Permitted values are 'Enabled' or 'Disabled'",
           "enum": [
