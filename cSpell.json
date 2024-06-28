@@ -2,8 +2,13 @@
     "version": "0.1",
     "language": "en",
     "words": [
+        "authnotrequired",
         "Creds",
+        "fixdate",
+        "frontends",
         "partiallycompleted",
+        "servicenetworking",
+        "subchannel",
         "umls"
     ],
     "dictionaryDefinitions": [
@@ -18,7 +23,8 @@
     ],
     "ignorePaths": [
         "node_modules/**",
-        "**/examples/**"
+        "**/examples/**",
+        "**/package-lock.json"
     ],
     "ignoreRegExpList": [
         "v\\d",
@@ -64,7 +70,61 @@
             ]
         },
         {
-            "filename": "**/specification/servicebus/resource-manager/Microsoft.ServiceBus/stable/2017-04-01/servicebus.json",
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2021-03-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2021-05-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/preview/2021-08-01-preview/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2021-12-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2022-02-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2022-09-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/databox/resource-manager/Microsoft.DataBox/stable/2022-12-01/databox.json",
+            "words": [
+                "Tera"
+            ]
+        },
+        {
+            "filename": "**/specification/servicebus/resource-manager/Microsoft.ServiceBus/stable/2017-04-01/Rules.json",
+            "words": [
+                "Ruleproperties"
+            ]
+        },
+        {
+            "filename": "**/specification/servicebus/resource-manager/Microsoft.ServiceBus/preview/2018-01-01-preview/Rules.json",
+            "words": [
+                "Ruleproperties"
+            ]
+        },
+        {
+            "filename": "**/specification/servicebus/resource-manager/Microsoft.ServiceBus/preview/2021-01-01-preview/Rules.json",
             "words": [
                 "Ruleproperties"
             ]
@@ -112,81 +172,16 @@
             ]
         },
         {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-02-01/managedClusters.json",
+            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerInstance/stable/2021-10-01/containerInstance.json",
             "words": [
-                "azpodpolicy"
+                "Noreuse"
             ]
         },
         {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-04-01/managedClusters.json",
+            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/aks/**/*json",
             "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-06-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-08-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-10-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-11-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-01-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-02-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-03-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-04-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-07-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
-            ]
-        },
-        {
-            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-09-01/managedClusters.json",
-            "words": [
-                "azpodpolicy"
+                "vtpm",
+                "trustedlaunch"
             ]
         },
         {
@@ -220,12 +215,6 @@
             "filename": "**/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfigurationRun.json",
             "words": [
                 "softare"
-            ]
-        },
-        {
-            "filename": "**/specification/azsadmin/resource-manager/storage/Microsoft.Storage.Admin/preview/2015-12-01/quotas.json",
-            "words": [
-                "Storge"
             ]
         },
         {
@@ -296,6 +285,12 @@
             ]
         },
         {
+            "filename": "**/specification/synapse/resource-manager/Microsoft.Synapse/preview/2021-04-01-preview/integrationRuntime.json",
+            "words": [
+                "Exprired"
+            ]
+        },
+        {
             "filename": "**/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-07-15-preview/definitions/TasksCommon.json",
             "words": [
                 "Miliseconds",
@@ -316,31 +311,13 @@
             ]
         },
         {
-            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/stable/7.0/keyvault.json",
+            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/**/keyvault.json",
             "words": [
                 "Regenerte"
             ]
         },
         {
-            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/preview/7.0/keyvault.json",
-            "words": [
-                "Regenerte"
-            ]
-        },
-        {
-            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/preview/7.1/storage.json",
-            "words": [
-                "Regenerte"
-            ]
-        },
-        {
-            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/preview/7.2/storage.json",
-            "words": [
-                "Regenerte"
-            ]
-        },
-        {
-            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/preview/7.3-preview/storage.json",
+            "filename": "**/specification/keyvault/data-plane/Microsoft.KeyVault/**/storage.json",
             "words": [
                 "Regenerte"
             ]
@@ -421,15 +398,34 @@
             ]
         },
         {
+            "filename": "**/specification/monitor/resource-manager/Microsoft.Insights/stable/2018-09-01/baseline_API.json",
+            "words": [
+                "metdata"
+            ]
+        },
+        {
             "filename": "**/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2018-04-02/storagesync.json",
             "words": [
                 "Managementt"
             ]
         },
         {
-            "filename": "**/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json",
+            "filename": "**/specification/migrate/resource-manager/**/*.json",
             "words": [
-                "Occured"
+                "Occured",
+                "Assessible",
+                "sqlcollectors",
+                "Reasonings",
+                "Overcommit",
+                "overcommit",
+                "SSDE",
+                "Recieved",
+                "Ebds",
+                "idms",
+                "Idms",
+                "Cluter",
+                "Mfamily",
+				"Datacentre"
             ]
         },
         {
@@ -482,6 +478,24 @@
         },
         {
             "filename": "**/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2018-01-22/iotdps.json",
+            "words": [
+                "Messsage"
+            ]
+        },
+        {
+            "filename": "**/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/preview/2020-09-01-preview/iotdps.json",
+            "words": [
+                "Messsage"
+            ]
+        },
+        {
+            "filename": "**/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-01-01/iotdps.json",
+            "words": [
+                "Messsage"
+            ]
+        },
+        {
+            "filename": "**/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-03-01/iotdps.json",
             "words": [
                 "Messsage"
             ]
@@ -545,13 +559,19 @@
             ]
         },
         {
-            "filename": "**/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json",
+            "filename": "**/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/entityTypes/IntegrationRuntime.json",
             "words": [
-                "Minimimum"
+                "Exprired"
             ]
         },
         {
-            "filename": "**/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/entityTypes/IntegrationRuntime.json",
+            "filename": "**/specification/synapse/resource-manager/Microsoft.Synapse/stable/2020-12-01/integrationRuntime.json",
+            "words": [
+                "Exprired"
+            ]
+        },
+        {
+            "filename": "**/specification/synapse/resource-manager/Microsoft.Synapse/stable/2021-03-01/integrationRuntime.json",
             "words": [
                 "Exprired"
             ]
@@ -594,32 +614,7 @@
             ]
         },
         {
-            "filename": "**/specification/migrate/resource-manager/Microsoft.Migrate/preview/2017-11-11-preview/migrate.json",
-            "words": [
-                "Occured"
-            ]
-        },
-        {
             "filename": "**/specification/cognitiveservices/data-plane/TextAnalytics/preview/v2.1/TextAnalytics.json",
-            "words": [
-                "carretera",
-                "estaba",
-                "atascada",
-                "Había",
-                "mucho",
-                "tráfico",
-                "ayer",
-                "carretera",
-                "estaba",
-                "atascada",
-                "Había",
-                "mucho",
-                "tráfico",
-                "ayer"
-            ]
-        },
-        {
-            "filename": "**/specification/cognitiveservices/data-plane/TextAnalytics/stable/v2.1/TextAnalytics.json",
             "words": [
                 "carretera",
                 "estaba",
@@ -711,6 +706,36 @@
             ]
         },
         {
+            "filename": "**/specification/databoxedge/resource-manager/Microsoft.DataBoxEdge/stable/2019-08-01/databoxedge.json",
+            "words": [
+                "Fulfilment"
+            ]
+        },
+        {
+            "filename": "**/specification/databoxedge/resource-manager/Microsoft.DataBoxEdge/stable/2020-09-01/databoxedge.json",
+            "words": [
+                "Fulfilment"
+            ]
+        },
+        {
+            "filename": "**/specification/databoxedge/resource-manager/Microsoft.DataBoxEdge/preview/2020-05-01-preview/databoxedge.json",
+            "words": [
+                "Fulfilment"
+            ]
+        },
+        {
+            "filename": "**/specification/databoxedge/resource-manager/Microsoft.DataBoxEdge/preview/2020-09-01-preview/databoxedge.json",
+            "words": [
+                "Fulfilment"
+            ]
+        },
+        {
+            "filename": "**/specification/databoxedge/resource-manager/Microsoft.DataBoxEdge/stable/2020-12-01/databoxedge.json",
+            "words": [
+                "Fulfilment"
+            ]
+        },
+        {
             "filename": "**/specification/cognitiveservices/data-plane/TranslatorText/stable/v3.0/TranslatorText.json",
             "words": [
                 "mosca",
@@ -754,19 +779,13 @@
             ]
         },
         {
-            "filename": "**/specification/servicebus/resource-manager/Microsoft.ServiceBus/preview/2018-01-01-preview/servicebus-preview.json",
-            "words": [
-                "networkrulesets",
-                "Setget"
-            ]
-        },
-        {
             "filename": "**/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/preview/2020-05-01-preview/machineLearningServices.json",
             "words": [
                 "mysqldb",
                 "psqldb"
             ]
         },
+
         {
             "filename": "**/specification/maps/data-plane/Microsoft.Maps/Render/preview/1.0/render.json",
             "words": [
@@ -776,30 +795,245 @@
             ]
         },
         {
-            "filename": "**/specification/communication/data-plane/Microsoft.CommunicationServicesChat/preview/2020-09-21-preview2/communicationserviceschat.json",
+            "filename": "**/specification/maps/data-plane/Render/preview/1.0/render.json",
+            "words": [
+                "Chttp",
+                "Fcontoso",
+                "Fpushpins"
+            ]
+        },
+        {
+            "filename": "**/specification/maps/data-plane/Spatial/stable/2022-08-01/spatial.json",
+            "words": [
+                "postbuffer",
+                "getbuffer",
+                "postclosestpoint",
+                "getclosestpoint"
+            ]
+        },
+        {
+            "filename": "**/specification/maps/data-plane/Search/stable/2023-06-01/search.json",
+            "words": [
+                "geocodingresponse"
+            ]
+        },
+        {
+            "filename": "**/specification/maps/data-plane/Search/preview/1.0/search.json",
+            "words": [
+                "searchaddressresult",
+                "searchaddressreverseresponse"
+            ]
+        },
+        {
+            "filename": "**/specification/communication/data-plane/Chat/preview/2020-09-21-preview2/communicationserviceschat.json",
             "words": [
                 "readreceipts"
             ]
         },
         {
-            "filename": "**/specification/communication/data-plane/Microsoft.CommunicationServicesAdministration/preview/2020-07-20-preview1/communicationservicesadministration.json",
+            "filename": "**/specification/saas/resource-manager/Microsoft.SaaS/preview/2018-03-01-beta/saas.json",
             "words": [
-                "areacodes",
-                "locationoptions",
-                "phonenumbers",
-                "phoneplangroups",
-                "phoneplans",
-                "pstn",
-                "unconfiguring"
+                "saasresources"
             ]
         },
         {
-            "filename": "**/specification/saas/resource-manager/Microsoft.SaaS/preview/2018-03-01-beta/saas.json",
+            "filename": "**/specification/hdinsight/hdinsight-kafka-rest-proxy/proxy.json",
             "words": [
-                "checkmoderneligibility",
-                "saasresources",
-                "Moderneligibility"
+                "Metada"
+            ]
+        },
+        {
+            "filename": "**/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json",
+            "words": [
+                "saskey"
+            ]
+        },
+        {
+            "filename": "**/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/locations.json",
+            "words": [
+                "vmsize",
+                "vmsizes"
+            ]
+        },
+        {
+            "filename": "**/specification/hdinsight/resource-manager/Microsoft.HDInsight/stable/2018-06-01-preview/cluster.json",
+            "words": [
+                "azureasyncoperations",
+                "saskey"
+            ]
+        },
+        {
+            "filename": "**/specification/hdinsight/resource-manager/Microsoft.HDInsight/stable/2018-06-01-preview/locations.json",
+            "words": [
+                "vmsize",
+                "vmsizes"
+            ]
+        },
+        {
+            "filename": "**/specification/web/resource-manager/Microsoft.Web/**/CommonDefinitions.json",
+            "words": [
+                "Guage"
+            ]
+        },
+        {
+            "filename": "**/specification/confluent/resource-manager/Microsoft.Confluent/**/confluent.json",
+            "words": [
+                "orgvalidate"
+            ]
+        },
+        {
+            "filename": "**/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/**/service.json",
+            "words": [
+                "Orignal",
+                "Seleted",
+                "targetvCenterId"
+            ]
+        },
+        {
+            "filename": "**/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/**/bms.json",
+            "words": [
+                "xcool"
+            ]
+        },
+        {
+            "filename": "**/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2021-10-15/iotdps.json",
+            "words": [
+                "Messsage"
+            ]
+        },
+        {
+            "filename": "**/specification/cognitiveservices/data-plane/FormRecognizer/**/FormRecognizer.json",
+            "words": [
+                "heif",
+                "spreadsheetml",
+                "presentationml",
+                "barcodes",
+                "UPCA",
+                "UPCE",
+                "Codabar",
+                "rrggbb"
+            ]
+        },
+        {
+            "filename": "**/specification/ai/data-plane/DocumentIntelligence/**/DocumentIntelligence.json",
+            "words": [
+                "documentintelligence",
+                "heif",
+                "spreadsheetml",
+                "presentationml",
+                "barcodes",
+                "UPCA",
+                "UPCE",
+                "Codabar",
+                "rrggbb"
+            ]
+        },
+        {
+            "filename": "**/specification/machinelearningservices/data-plane/Microsoft.MachineLearningServices/preview/2019-*/modelManagement.json",
+            "words": [
+                "UNKNOWON"
+            ]
+        },
+        {
+            "filename": "**/specification/machinelearningservices/data-plane/Microsoft.MachineLearningServices/preview/2022-*-preview/machineLearningServices.json",
+            "words": [
+                "Tmpfs",
+                "tmpfs",
+                "npipe"
+            ]
+        },
+        {
+            "filename": "**/specification/dataprotection/resource-manager/Microsoft.DataProtection/**/dataprotection.json",
+            "words": [
+                "PrepareTimedout",
+                "CommitTimedout"
+            ]
+        },
+        {
+            "filename": "**/specification/purview/data-plane/Azure.Analytics.Purview.Workflow/preview/**/purviewWorkflow.json",
+            "words": [
+                "userrequests",
+                "DSAR",
+                "dsar",
+                "workflowruns",
+                "workflowtasks"
+            ]
+        },
+        {
+            "filename": "**/specification/translation/data-plane/**/*.json",
+            "words": [
+                "autodetection",
+                "breaksentence",
+                "mosca",
+                "Transliterable",
+                "translitered"
+            ]
+        },
+        {
+            "filename": "**/specification/fist/resource-manager/Microsoft.IoTFirmwareDefense/preview/**/*.json",
+            "words": [
+                "RELRO",
+                "relro",
+                "rpath",
+                "runpath"
+            ]
+        },
+        {
+            "filename": "**/specification/securityinsights/resource-manager/Microsoft.SecurityInsights/preview/**/*.json",
+            "words": [
+                "Criterias"
+            ]
+        },
+        {
+            "filename": "**/specification/cognitiveservices/data-plane/AzureOpenAI/inference/preview/**/*.json",
+            "words": [
+                "flac",
+                "mpga"
+            ]
+        },
+        {
+            "filename": "**/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2024-01-01-preview/appplatform.json",
+            "words": [
+                "springboot"
+            ]
+        },
+        {
+            "filename": "**/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/**/*.json",
+            "words": [
+                "throughputpool"
+            ]
+        },
+        {
+            "filename": "**/specification/purview/data-plane/Azure.Analytics.Purview.DataMap/**/*.json",
+            "words": [
+                "timerange"
+            ]
+        },
+        {
+            "filename": "**/specification/search/data-plane/Azure.Search/**/*.json",
+            "words": [
+                "rerank",
+                "discretizing"
+            ]
+        },
+        {
+            "filename": "**/specification/nginx/resource-manager/NGINX.NGINXPLUS/**/*.json",
+            "words": [
+                "nginx",
+                "nginxaas"
+            ]
+        },
+        {
+            "filename": "**/specification/containerservice/resource-manager/Microsoft.ContainerService/**/*.json",
+            "words": [
+                 "containerd"
             ]
         }
+    ],
+    "enableFiletypes": [
+        "cadl"
+    ],
+    "ignoreWords": [
+        "trafficcontrollerspec"
     ]
 }

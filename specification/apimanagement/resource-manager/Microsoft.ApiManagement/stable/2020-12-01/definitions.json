@@ -2135,6 +2135,10 @@
             ]
           },
           "description": "The format of the Operation Name for Application Insights telemetries. Default is Name."
+        },
+        "metrics": {
+          "type": "boolean",
+          "description": "Emit custom metrics via emit-metric policy. Applicable only to Application Insights diagnostic settings."
         }
       },
       "required": [
@@ -2967,7 +2971,7 @@
         },
         "identityClientId": {
           "type": "string",
-          "description": "SystemAssignedIdentity or UserAssignedIdentity Client Id which will be used to access key vault secret."
+          "description": "Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret."
         }
       },
       "description": "Create keyVault contract details."
@@ -3454,6 +3458,21 @@
       "description": "Api Operation Entity Base Contract details."
     },
     "OperationResultContract": {
+      "properties": {
+        "properties": {
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/OperationResultContractProperties",
+          "description": "Properties of the Operation Contract."
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "./apimanagement.json#/definitions/Resource"
+        }
+      ],
+      "description": "Long Running Git Operation Results."
+    },
+    "OperationResultContractProperties": {
       "properties": {
         "id": {
           "type": "string",
@@ -5409,6 +5428,16 @@
     },
     "TenantConfigurationSyncStateContract": {
       "properties": {
+        "properties": {
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/TenantConfigurationSyncStateContractProperties",
+          "description": "Properties returned Tenant Configuration Sync State check."
+        }
+      },
+      "description": "Result of Tenant Configuration Sync State."
+    },
+    "TenantConfigurationSyncStateContractProperties": {
+      "properties": {
         "branch": {
           "type": "string",
           "description": "The name of Git branch."
@@ -5438,6 +5467,10 @@
           "type": "string",
           "format": "date-time",
           "description": "The date of the latest configuration change. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.\n"
+        },
+        "lastOperationId": {
+          "type": "string",
+          "description": "Most recent tenant configuration operation identifier"
         }
       },
       "description": "Tenant Configuration Synchronization State."

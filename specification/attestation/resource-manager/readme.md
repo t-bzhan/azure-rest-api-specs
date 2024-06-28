@@ -26,7 +26,7 @@ These are the global settings for the Attestation API.
 
 ``` yaml
 openapi-type: arm
-tag: package-2020-10-01
+tag: package-2021-06-01
 ```
 
 ### Tag: package-2018-09-01
@@ -47,6 +47,23 @@ input-file:
 - Microsoft.Attestation/stable/2020-10-01/attestation.json
 ```
 
+### Tag: package-2021-06-01-preview
+
+These settings apply only when `--tag=package-2021-06-01-preview` is specified on the command line.
+
+``` yaml $(tag) == 'package-2021-06-01-preview'
+input-file:
+- Microsoft.Attestation/preview/2021-06-01-preview/attestation.json
+```
+
+### Tag: package-2021-06-01
+
+These settings apply only when `--tag=package-2021-06-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-2021-06-01'
+input-file:
+- Microsoft.Attestation/stable/2021-06-01/attestation.json
+```
 
 ---
 # Code Generation
@@ -58,14 +75,13 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
-  - repo: azure-sdk-for-net
-  - repo: azure-sdk-for-python
+  - repo: azure-sdk-for-net-track2
+  - repo: azure-sdk-for-python-track2
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-java
   - repo: azure-resource-manager-schemas
-    after_scripts:
-      - node sdkauto_afterscript.js attestation/resource-manager
+  - repo: azure-powershell
 ```
 
 ## Python
@@ -91,11 +107,9 @@ csharp:
 
 See configuration in [readme.go.md](./readme.go.md)
 
-## Trenton
+## Terraform
 
-See configuration in [readme.trenton.md](./readme.trenton.md)
+See configuration in [readme.terraform.md](./readme.terraform.md)
 
-## AzureResourceSchema
 
-See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
 

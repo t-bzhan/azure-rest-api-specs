@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for NotificationHubs.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for NotificationHubs, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,34 +15,71 @@ To build the SDK for NotificationHubs, simply [Install AutoRest](https://aka.ms/
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the NotificationHubs API.
 
 directive:
-  - where:
-      - $.definitions.NamespaceCreateOrUpdateParameters
-    suppress:
-      - TrackedResourcePatchOperation
-  - where:
-      - $.definitions.NamespaceCreateOrUpdateParameters
-    suppress:
-      - TrackedResourceGetOperation
+
+* where:
+
+  * $.definitions.NamespaceCreateOrUpdateParameters
+suppress:
+
+  * TrackedResourcePatchOperation
+
+* where:
+
+  * $.definitions.NamespaceCreateOrUpdateParameters
+suppress:
+
+  * TrackedResourceGetOperation
 
 ``` yaml
 openapi-type: arm
-tag: package-2017-04
+tag: package-preview-2023-10
 directive:
   - where:
       - $.definitions.NamespaceCreateOrUpdateParameters
     suppress:
       - TrackedResourcePatchOperation
       - TrackedResourceGetOperation
+```
+
+
+### Tag: package-preview-2023-10
+
+These settings apply only when `--tag=package-preview-2023-10` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2023-10'
+input-file:
+  - Microsoft.NotificationHubs/preview/2023-10-01-preview/notificationhubs.json
+```
+### Tag: package-2023-09
+
+These settings apply only when `--tag=package-2023-09` is specified on the command line.
+
+``` yaml $(tag) == 'package-2023-09'
+input-file:
+  - Microsoft.NotificationHubs/stable/2023-09-01/notificationhubs.json
+```
+
+### Tag: package-preview-2023-01
+
+These settings apply only when `--tag=package-preview-2023-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-preview-2023-01'
+input-file:
+  - Microsoft.NotificationHubs/preview/2023-01-01-preview/notificationhubs.json
+
+suppressions:
+ - code: RepeatedPathInfo
+   reason: We cannot remove the subscriptionId parameter without introducing a breaking change.
 ```
 
 ### Tag: package-2017-04
@@ -72,10 +109,9 @@ input-file:
 - Microsoft.NotificationHubs/stable/2014-09-01/notificationhubs.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -84,8 +120,8 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
-  - repo: azure-sdk-for-net
-  - repo: azure-sdk-for-python
+  - repo: azure-sdk-for-net-track2
+  - repo: azure-sdk-for-python-track2
   - repo: azure-sdk-for-java
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-js
@@ -94,10 +130,8 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_notification_hubs']
   - repo: azure-resource-manager-schemas
-    after_scripts:
-      - node sdkauto_afterscript.js notificationhubs/resource-manager
+  - repo: azure-powershell
 ```
-
 
 ## C#
 
@@ -113,48 +147,9 @@ csharp:
   clear-output-folder: true
 ```
 
-
 ## Python
 
-These settings apply only when `--python` is specified on the command line.
-Please also specify `--python-sdks-folder=<path to the root directory of your azure-sdk-for-python clone>`.
-Use `--python-mode=update` if you already have a setup.py and just want to update the code itself.
-
-``` yaml $(python) && !$(track2)
-python-mode: create
-python:
-  azure-arm: true
-  license-header: MICROSOFT_MIT_NO_VERSION
-  payload-flattening-threshold: 2
-  namespace: azure.mgmt.notificationhubs
-  package-name: azure-mgmt-notificationhubs
-  clear-output-folder: true
-```
-
-``` yaml $(python) && $(track2)
-python-mode: create
-azure-arm: true
-license-header: MICROSOFT_MIT_NO_VERSION
-namespace: azure.mgmt.notificationhubs
-package-name: azure-mgmt-notificationhubs
-package-version: 7.0.0b1
-clear-output-folder: true
-```
-
-``` yaml $(python) && $(python-mode) == 'update'
-no-namespace-folders: true
-output-folder: $(python-sdks-folder)/notificationhubs/azure-mgmt-notificationhubs/azure/mgmt/notificationhubs
-python:
-  no-namespace-folders: true
-  output-folder: $(python-sdks-folder)/notificationhubs/azure-mgmt-notificationhubs/azure/mgmt/notificationhubs
-```
-``` yaml $(python) && $(python-mode) == 'create'
-basic-setup-py: true
-output-folder: $(python-sdks-folder)/notificationhubs/azure-mgmt-notificationhubs
-python:
-  basic-setup-py: true
-  output-folder: $(python-sdks-folder)/notificationhubs/azure-mgmt-notificationhubs
-```
+See configuration in [readme.python.md](./readme.python.md)
 
 ## Go
 
@@ -221,10 +216,3 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
-
-
-
-## AzureResourceSchema
-
-See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
-

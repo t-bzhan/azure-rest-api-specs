@@ -8,17 +8,11 @@ azure-arm: true
 license-header: MICROSOFT_MIT_NO_VERSION
 package-name: azure-mgmt-resourcemover
 clear-output-folder: true
-no-namespace-folders: true
+namespace: azure.mgmt.resourcemover
 package-version: 1.0.0b1
 ```
 
-```yaml $(python) && $(python-mode) == 'update'
+```yaml $(python)
 no-namespace-folders: true
 output-folder: $(python-sdks-folder)/resourcemover/azure-mgmt-resourcemover/azure/mgmt/resourcemover
-```
-
-``` yaml $(python) && $(python-mode) == 'create'
-python:
-  basic-setup-py: true 
-  output-folder: $(python-sdks-folder)/resourcemover/azure-mgmt-resourcemover
 ```

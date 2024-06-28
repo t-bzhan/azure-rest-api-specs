@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Azure NetApp Files.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for Azure NetApp Files, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,21 +15,168 @@ To build the SDK for Azure NetApp Files, simply [Install AutoRest](https://aka.m
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the Azure NetApp Files API.
 
 ``` yaml
 title: NetAppManagementClient
 description: Microsoft NetApp Files Azure Resource Provider specification
 openapi-type: arm
-tag: package-netapp-2020-11-01
+tag: package-netapp-2023-07-01
 ```
+
+
+### Tag: package-netapp-2023-07-01
+
+These settings apply only when `--tag=package-netapp-2023-07-01` is specified on the command line.
+
+```yaml $(tag) == 'package-netapp-2023-07-01'
+input-file:
+  - Microsoft.NetApp/stable/2023-07-01/netapp.json
+```
+
+### Tag: package-preview-2023-05
+
+These settings apply only when `--tag=package-preview-2023-05` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2023-05'
+input-file:
+  - Microsoft.NetApp/preview/2023-05-01-preview/netapp.json
+tag: package-2023-07
+```
+
+### Tag: package-netapp-2023-05-01
+
+These settings apply only when `--tag=package-netapp-2023-05-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2023-05-01'
+input-file:
+  - Microsoft.NetApp/stable/2023-05-01/netapp.json
+```
+
+### Tag: package-netapp-2022-11-01
+
+These settings apply only when `--tag=package-netapp-2022-11-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-11-01'
+input-file:
+- Microsoft.NetApp/stable/2022-11-01/netapp.json
+```
+
+### Tag: package-netapp-2022-11-01-preview
+
+These settings apply only when `--tag=package-netapp-2022-11-01-preview` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-11-01-preview'
+input-file:
+- Microsoft.NetApp/preview/2022-11-01-preview/netapp.json
+```
+
+### Tag: package-netapp-2022-09-01
+
+These settings apply only when `--tag=package-netapp-2022-09-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-09-01'
+input-file:
+- Microsoft.NetApp/stable/2022-09-01/netapp.json
+```
+
+### Tag: package-netapp-2022-05-01
+
+These settings apply only when `--tag=package-netapp-2022-05-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-05-01'
+input-file:
+- Microsoft.NetApp/stable/2022-05-01/netapp.json
+```
+
+### Tag: package-netapp-2022-03-01
+
+These settings apply only when `--tag=package-netapp-2022-03-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-03-01'
+input-file:
+- Microsoft.NetApp/stable/2022-03-01/netapp.json
+```
+
+### Tag: package-netapp-2022-01-01
+
+These settings apply only when `--tag=package-netapp-2022-01-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2022-01-01'
+input-file:
+- Microsoft.NetApp/stable/2022-01-01/netapp.json
+```
+
+### Tag: package-netapp-2021-10-01
+
+These settings apply only when `--tag=package-netapp-2021-10-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-10-01'
+input-file:
+- Microsoft.NetApp/stable/2021-10-01/netapp.json
+```
+
+### Tag: package-netapp-2021-08-01
+
+These settings apply only when `--tag=package-netapp-2021-08-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-08-01'
+input-file:
+- Microsoft.NetApp/stable/2021-08-01/netapp.json
+```
+
+### Tag: package-netapp-2021-06-01
+
+These settings apply only when `--tag=package-netapp-2021-06-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-06-01'
+input-file:
+- Microsoft.NetApp/stable/2021-06-01/netapp.json
+```
+
+### Tag: package-netapp-2021-04-01
+
+These settings apply only when `--tag=package-netapp-2021-04-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-04-01'
+input-file:
+- Microsoft.NetApp/stable/2021-04-01/netapp.json
+```
+
+### Tag: package-netapp-2021-04-01-preview
+
+These settings apply only when `--tag=package-netapp-2021-04-01-preview` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-04-01-preview'
+input-file:
+- Microsoft.NetApp/preview/2021-04-01-preview/netapp.json
+```
+
+### Tag: package-netapp-2021-02-01
+
+These settings apply only when `--tag=package-netapp-2021-02-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2021-02-01'
+input-file:
+- Microsoft.NetApp/stable/2021-02-01/netapp.json
+```
+
+### Tag: package-netapp-2020-12-01
+
+These settings apply only when `--tag=package-netapp-2020-12-01` is specified on the command line.
+
+``` yaml $(tag) == 'package-netapp-2020-12-01'
+input-file:
+- Microsoft.NetApp/stable/2020-12-01/netapp.json
+```
+
 ### Tag: package-netapp-2020-11-01
 
 These settings apply only when `--tag=package-netapp-2020-11-01` is specified on the command line.
@@ -165,10 +312,9 @@ input-file:
 - Microsoft.NetApp/preview/2017-08-15/netapp.json
 ```
 
-
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -177,18 +323,15 @@ This is not used by Autorest itself.
 
 ``` yaml $(swagger-to-sdk)
 swagger-to-sdk:
-  - repo: azure-sdk-for-python
   - repo: azure-sdk-for-python-track2
-  - repo: azure-sdk-for-net
+  - repo: azure-sdk-for-net-track2
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-go
   - repo: azure-sdk-for-java
-  - repo: azure-sdk-for-trenton  
+  - repo: azure-sdk-for-trenton
   - repo: azure-resource-manager-schemas
-    after_scripts:
-      - node sdkauto_afterscript.js netapp/resource-manager
+  - repo: azure-powershell
 ```
-
 
 ## C#
 
@@ -210,22 +353,30 @@ See configuration in [readme.go.md](./readme.go.md)
 
 See configuration in [readme.java.md](./readme.java.md)
 
-## AzureResourceSchema
+## Terraform
 
-See configuration in [readme.azureresourceschema.md](./readme.azureresourceschema.md)
+These settings apply only when `--terraform` is specified on the command line.
 
-## trenton
-
-These settings apply only when `--trenton` is specified on the command line.
-
-``` yaml $(trenton)
-trenton:
+``` yaml $(terraform)
+terraform:
     cli-name: netapp
     azure_arm: true
     license_header: MICROSOFT_MIT_NO_VERSION
     payload_flattening_threshold: 2
     namespace: netapp
     package-name: netapp
-    clear_output_folder: false
+    clear-output-folder: false
 ```
 
+# Suppressions
+
+``` yaml
+suppressions:
+  - code: LroPostReturn
+    reason: The linter incorrectly flags LRO POST operations with no payload response, should allow to be a 202/204 NoContent for the LRO empty response case
+    from: netapp.json
+    where:
+      - $.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}/backupVaults/{backupVaultName}/backups/{backupName}/restoreFiles"].post
+      - $.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}/capacityPools/{poolName}/volumes/{volumeName}/migrateBackups"].post
+      - $.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.NetApp/netAppAccounts/{accountName}/migrateBackups"].post
+```

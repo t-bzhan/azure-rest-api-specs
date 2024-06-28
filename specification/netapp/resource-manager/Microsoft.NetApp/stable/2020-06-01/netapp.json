@@ -63,6 +63,11 @@
           "default": {
             "description": "Error response describing why the operation failed."
           }
+        },
+        "x-ms-examples": {
+          "OperationList": {
+            "$ref": "examples/OperationList.json"
+          }
         }
       }
     },
@@ -2873,7 +2878,7 @@
         },
         "username": {
           "type": "string",
-          "description": "Username of Active Directory domain administrator"
+          "description": "A domain user account with permission to create machine accounts"
         },
         "password": {
           "type": "string",
@@ -3475,7 +3480,7 @@
           "title": "Maximum throughput in Mibps that can be achieved by this volume",
           "type": "number",
           "default": 0.0,
-          "example": "128.22",
+          "example": 128.22,
           "maximum": 4500,
           "minimum": 0,
           "multipleOf": 0.001
@@ -3779,7 +3784,7 @@
         "throughputMibps": {
           "title": "Maximum throughput in Mibps that can be achieved by this volume",
           "type": "number",
-          "example": "128.22",
+          "example": 128.22,
           "maximum": 4500,
           "minimum": 1,
           "multipleOf": 0.001
@@ -4416,9 +4421,29 @@
           "description": "Label for backup"
         },
         "backupType": {
+          "title": "backupType",
           "type": "string",
           "readOnly": true,
-          "description": "Type of backup adhoc or scheduled"
+          "description": "Type of backup Manual or Scheduled",
+          "enum": [
+            "Manual",
+            "Scheduled"
+          ],
+          "x-ms-enum": {
+            "name": "backupType",
+            "modelAsString": true,
+            "values": [
+              {
+                "value": "Manual",
+                "description": "Manual backup"
+              },
+              {
+                "value": "Scheduled",
+                "description": "Scheduled backup"
+              }
+            ]
+          },
+          "example": "Manual"
         }
       }
     },
@@ -4742,7 +4767,7 @@
       "type": "string",
       "in": "path",
       "required": true,
-      "description": "The name of the mount target",
+      "description": "The name of the snapshot",
       "x-ms-parameter-location": "method"
     },
     "SnapshotPolicyName": {
@@ -4750,7 +4775,7 @@
       "type": "string",
       "in": "path",
       "required": true,
-      "description": "The name of the snapshot policy target",
+      "description": "The name of the snapshot policy",
       "x-ms-parameter-location": "method"
     },
     "BackupName": {
